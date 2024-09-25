@@ -11,9 +11,6 @@ class AdiwiyataActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_adiwiyata)
 
-        val textView = findViewById<TextView>(R.id.textViewadi)
-        textView.text = "SELAMAT KAMU MASUK KE DALAM HALAMAN ADIWIYATA"
-
         val buttonGoBack = findViewById<Button>(R.id.buttonGoBack)
         buttonGoBack.setOnClickListener {
             // Navigate back to the previous activity

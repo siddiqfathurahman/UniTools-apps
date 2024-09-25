@@ -6,40 +6,45 @@
     android:background="#FFFFFF"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/textViewadi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SELAMAT KAMU MASUK KE DALAM HALAMAN ADIWIYATA"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
-        android:gravity="center"/>
-
     <ImageView
         android:id="@+id/imageViewPohon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/pohon"
-        app:layout_constraintTop_toBottomOf="@id/textViewadi"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:adjustViewBounds="true"
         android:maxWidth="300dp"
         android:maxHeight="300dp"/>
 
-    <Button
-        android:id="@+id/buttonGoBack"
+    <TextView
+        android:id="@+id/textViewadi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go Back"
-        android:layout_marginTop="20dp"
+        android:text="@string/adiwiyata_description"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/imageViewPohon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:justificationMode="inter_word"/>
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="284dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#008080"
+        android:text="Go Back"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

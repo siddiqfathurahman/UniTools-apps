@@ -12,7 +12,6 @@
         android:layout_height="290dp"
         android:contentDescription="Peta Image"
         android:src="@drawable/peta"
-        app:layout_constraintBottom_toTopOf="@id/textView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,33 +32,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <!-- TextView menampilkan pesan -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ini adalah halaman peta smk n 2 yogyakarta"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/buttonGoBack3"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonimgpeta"
-        app:layout_constraintVertical_bias="0.5" />
-
     <!-- Button Go Back -->
     <Button
         android:id="@+id/buttonGoBack3"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:layout_width="284dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#008080"
         android:text="Go Back"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="53dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
